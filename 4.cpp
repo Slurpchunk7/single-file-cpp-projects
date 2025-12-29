@@ -40,8 +40,6 @@ void draw(const vector<int>& b) {
     }
 }
 
-/* ---------- MINIMAX (difficulty 10) ---------- */
-
 int minimax(vector<int>& b, bool aiTurn) {
     if (won(b, 2)) return 10;
     if (won(b, 1)) return -10;
@@ -80,8 +78,6 @@ int bestMinimaxMove(vector<int> b) {
     }
     return move;
 }
-
-/* ---------- AI MOVE WITH DIFFICULTY ---------- */
 
 int aiMove(vector<int> b, int difficulty) {
     if (difficulty == 10)
@@ -122,8 +118,6 @@ int aiMove(vector<int> b, int difficulty) {
 
     return free[rand() % free.size()];
 }
-
-/* ---------- MAIN ---------- */
 
 int main() {
     srand((unsigned)time(nullptr));
@@ -174,3 +168,4 @@ int main() {
 
     return 0;
 }
+
